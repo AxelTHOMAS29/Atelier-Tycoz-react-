@@ -1,0 +1,134 @@
+.formulaire {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; 
+
+  @media screen and (max-width: 600px){
+    height: 90vh
+  } 
+
+
+  @media screen and (max-height: 599px){
+    height: 120vh
+  } 
+
+  @media screen and (max-height: 450px){
+    height: 200vh
+  } 
+
+  @media screen and (max-height: 350px){
+    height: 200vh
+  } 
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1000px){
+    width: 80%;
+    flex-direction: column;
+  }
+}
+
+.form-info-container, .form-message-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.textContactForm {
+  animation: coloar 30s alternate infinite;
+  display: flex;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-decoration-line: underline;
+
+  @media screen and (max-width: 1000px){
+    text-align: center;
+    font-size: 140%;
+  }
+
+  @media screen and (max-width: 515px){
+    margin-top: 100px;
+  }
+
+  @media screen and (max-width: 490px){
+    margin-top: 20px;
+  }
+}
+
+@keyframes coloar {
+  0% {
+    color: $color-2;
+  }
+  50% {
+    color: $color-1;
+  }
+  100% {
+    color: $color-2;
+  }
+}
+
+input {
+  background-color: grey;
+  border-radius: 2px;
+  margin-bottom: 2vh;
+  height: 5vh;
+  width: 80%;
+  cursor: context-menu;
+
+  @media screen and (max-width: 1000px){
+    width: 90%;
+  }
+}
+
+textarea {
+  background-color: grey;
+  border-radius: 2px;
+  height: 19vh;
+  width: 100%;
+  cursor: context-menu;
+  resize: none;
+  border-radius: 10px;
+  border: none;
+
+  @media screen and (max-width: 1000px){
+    margin-bottom: 20px;
+    width: 90%;
+    height: 250px;
+    font-size: 18px;
+  }
+}
+
+
+::placeholder {
+  color: white;
+}
+
+input {
+  border-radius: 5px;
+  border: none;
+
+  @media screen and (max-width: 1000px){
+    height: 70px;
+    font-size: 18px;
+  }  
+}
+
+.ButtonEnvoyer {
+  width: min-content;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: grey;
+  font-size: 22px;
+
+  @media screen and (max-width: 1000px){
+    height: 50px;
+  } 
+}

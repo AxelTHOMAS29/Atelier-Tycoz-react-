@@ -1,0 +1,26 @@
+.mentionsLegales {
+
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15vh;
+    }
+
+    .charte {
+        position: absolute;
+        bottom: 0;
+
+        @media screen and (max-height: 450px){
+            bottom: auto;
+          } 
+    }
+}

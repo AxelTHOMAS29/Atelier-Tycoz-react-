@@ -1,0 +1,198 @@
+.home {
+    .navigation {
+        z-index: 3;
+        position: fixed;
+    }
+
+    .video-container{
+        margin-left: -2%;
+        margin-right: -2%;
+     }
+
+    .video-TyCoz {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        z-index: 1;
+        
+        @media screen and (max-width: 700px){
+            height: 60vh;
+        }   
+    }
+
+    .video-logo{
+        z-index: 2;
+        position: absolute;
+        height: 100px;
+        right: 0;
+    }
+
+    ///methodes
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 5vh;
+    }
+
+    .methodes-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 5vh;
+
+        @media screen and (max-width: 900px){
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-height: 500px){
+            height: 60vh;
+        }   
+    }
+
+    .methodes-img {
+        width: 40%;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-right: 4%;
+
+        @media screen and (max-width: 900px){
+            width: 100%;
+            height: 40vh;
+            position: absolute;
+            opacity: 0.4;
+            margin-right: 0;
+        }
+
+        @media screen and (max-height: 500px){
+            height: 60vh;
+        }   
+    }
+
+    .methodes-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: 900px){
+            z-index: 2;
+        }
+
+        @media screen and (max-width: 700px){
+            font-size: 12px;
+        }    
+    }
+
+    .methodes-txt-span {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    ///expérience
+    
+    .experience-container  {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 40vh;
+        background-color: 	#4f5358;	
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 30px;
+
+        @media screen and (max-width: 900px){
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    .experience-container-txt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 900px){
+            font-size: 70%;
+        }    
+    }
+
+    .experience-icon {
+        font-size: 50px;
+        margin-right: 10%;
+
+        @media screen and (max-width: 900px){
+            font-size: 30px;
+        }   
+        
+        @media screen and (max-width: 600px){
+            font-size: 20px;
+        }           
+    }
+
+    ///Propos
+
+    .Propos-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 40vh;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 5vh;
+        
+        @media screen and (max-width: 900px){
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }    
+
+        @media screen and (max-height: 500px){
+            height: 80vh;
+        }   
+    }
+
+    .propos-img {
+        width: 40%;
+        height: 40vh;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-left: 5%;
+
+        @media screen and (max-width: 900px){
+            position: absolute;
+            width: 100%;
+            margin-left: 0;
+            opacity: 0.4;
+        }
+
+        @media screen and (max-height: 500px){
+            height: 80vh;
+        }   
+    }
+
+    .propos-txt {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (max-width: 900px){
+            z-index: 2;
+        }
+
+        @media screen and (max-width: 700px){
+            font-size: 12px;
+        } 
+
+        @media screen and (max-width: 400px){
+            font-size: 9px;
+        } 
+    }
+}

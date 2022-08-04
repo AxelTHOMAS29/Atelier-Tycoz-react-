@@ -1,0 +1,99 @@
+.prestations {
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3vh;
+
+        @media screen and (max-width: 600px){
+            flex-direction: column;
+        }   
+
+        h1 {
+            text-align: center;
+        }
+
+        .logo {
+            width: auto;
+        }
+    }
+
+    .prestations-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .prestations-container-exemple {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        justify-content: space-between;
+        margin-top: 5vh;
+
+        @media screen and (max-width: 600px){
+            flex-direction: column;
+            border-radius: 20px;
+            align-items: center;
+        }   
+    }
+
+    @media screen and (max-width: 600px){
+        .prestations-container-exemple-V3 {
+            box-shadow: 10px -5px 10px #4f5358;
+        }
+    }
+
+    .prestations-container-exemple-V2 {
+        background-color: #4f5358;
+        border-radius: 20px;
+    }
+
+    .prestations-exemple {
+        width: 50%;
+
+        @media screen and (max-width: 600px){
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }   
+    }
+
+    .prestations-img {
+        height: 35vh;
+        width: 40%;
+        object-fit: cover;
+        border-radius: 20px;
+        object-position: bottom;
+
+        @media screen and (max-width: 600px){
+            width: 100%;
+        }   
+    }
+
+    .prestations-img-V2 {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        object-position: center;
+    }
+
+    .prestation-img-V3 {
+        object-position: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .prestations-txt {
+        text-align: center;
+        align-self: center;
+    }
+    
+}

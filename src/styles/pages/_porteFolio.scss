@@ -1,0 +1,115 @@
+.portFolio {
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .navigation {
+        position: fixed;
+        z-index: 3;
+    }
+
+    .scroll {
+        height: 100vh;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        margin-left: -2%;
+        margin-right: -2%;
+    }
+
+    .test1,
+    .test2,
+    .test3,
+    .test4,
+    .test5 {
+        height: 100vh;
+        width: 100%;
+        scroll-snap-align: center;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+    }
+
+    .maison-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        opacity: 1;
+        z-index: 1;
+
+        @media screen and (max-width: 600px) {
+            height: 50%;
+            align-self: center;
+        }
+    }
+
+    .Elorn {
+        margin-top: 40vh;
+        font-size: 30px;
+
+        a {
+            transition: 1s;
+        }
+    }
+
+    .Elorn-link:hover {
+        color: #4f5358;
+    }
+
+    .test4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .charte-test {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 15vh;
+        width: 100%;
+        background-color: #4f5358;
+    }
+
+    a {
+        color: azure;
+    }
+
+    .arrow-container {
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        bottom: 10vh;
+        left: 10vw;
+        z-index: 1;
+
+        @media screen and (max-width: 600px) {
+            display: flex;
+        }
+    }
+
+    .arrow-icon {
+        z-index: 1;
+        font-size: 30px;
+        color: azure;
+        -webkit-animation: anim2 3s alternate infinite;
+        animation: anim2 3s alternate infinite;
+
+        @-webkit-keyframes anim2 {
+            to {
+                transform: rotate(-180deg);
+            }
+        }
+
+        @keyframes anim2 {
+            to {
+                transform: rotate(-360deg);
+            }
+        }
+    }
+
+
+}
